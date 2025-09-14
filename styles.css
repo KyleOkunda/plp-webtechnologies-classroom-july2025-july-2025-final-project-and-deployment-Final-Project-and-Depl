@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #0077cc;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar .logo {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar a.active {
+  border-bottom: 2px solid #fff;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #e0f0ff;
+}
+.btn {
+  display: inline-block;
+  background: #0077cc;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+/* About */
+.about {
+  padding: 2rem;
+  text-align: center;
+}
+.profile-img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+/* Portfolio */
+.portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Services */
+.accordion li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.accordion-toggle {
+  width: 100%;
+  text-align: left;
+  background: #0077cc;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+.accordion-content {
+  display: none;
+  background: #f0f0f0;
+  padding: 0.75rem;
+}
+
+/* Contact */
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact label {
+  margin-top: 1rem;
+}
+.contact input,
+.contact textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#formMsg {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0077cc;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background: #0077cc;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+  .navbar ul.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
